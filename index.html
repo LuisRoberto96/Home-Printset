@@ -1,0 +1,574 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+  <!--Scripts, links externos e titulo-->
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" type="text/css" media="all"
+    href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+
+
+  <!--Scripts importantes para utilização de carousel's entre fontes e outras funcionalidades interessantes-->
+  <script src="//www.googletagmanager.com/gtm.js?id=GTM-5MW58J3"></script>
+  <script src="//www.google-analytics.com/analytics.js"></script>
+  <script src="https://connect.facebook.net/en_US/fbevents.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>Printset | Pulseiras, Tickets e Ingressos</title>
+
+</head>
+
+<!--Corpo da aplicação-->
+
+<body data-container="body" class="cms-index-index" aria-busy="false">
+
+  <div class="page-wrapper">
+
+    <!--Cabeçalho do site-->
+    <header class="page-header">
+
+      <!--Conteúdo do cabeçalho-->
+      <div class="header content">
+        <strong class="logo">
+          <img src="https://www.printset.com.br/media/logo/stores/1/logo_printset.png" alt="Printset" width="148"
+            height="43">
+        </strong>
+
+        <!--Área dos botões de Pulseiras, ingressos e ticket do cabeçalho (área esquerda da tela-->
+        <nav class="navigation" data-action="navigation">
+          <ul class="ui-menu ui-widget ui-widget-content ui-corner-all" role="menu" tabindex="0">
+            <li class="level0 nav-1 first level-top ui-menu-item" role="presentation">
+              <a href="" class="level-top ui-corner-all" tabindex="-1" role="menuitem">
+                <span>Pulseiras</span>
+              </a>
+            </li>
+            <li class="level0 nav-2 level-top ui-menu-item" role="presentation">
+              <a href="" class="level-top ui-corner-all" tabindex="-1" role="menuitem">
+                <span>Ingressos </span>
+              </a>
+            </li>
+            <li class="level0 nav-3 last level-top ui-menu-item" role="presentation">
+              <a href="" class="level-top ui-corner-all" tabindex="-1" role="menuitem">
+                <span>Ticket</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!--Meus pedidos, entrar e carrinho (área direita da tela)-->
+        <ul class="header links">
+          <li class="authorization-link logoff" data-label="ou">
+            <a href="" class="enter"> Entrar </a>
+          </li>
+        </ul>
+
+        <li class="nav item">
+          <a href="">Meus Pedidos</a>
+        </li>
+
+        <div data-block="minicart" class="minicart-wrapper">
+          <a href="" class="action showcart" data-bind="scope: 'minicart_content'">
+            <span class="text">Carrinho</span>
+            <span class="counter qty empty">
+              <span class="counter-number"> 0 </span>
+            </span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <!--Conteúdo da main-->
+    <main class="page-main">
+
+      <div class="columns">
+        <div class="column main">
+
+          <!--Carousel-->
+          <div class="meu carousel">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+              <!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+              </ol>
+
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+
+                <div class="item active">
+                  <img src="https://www.printset.com.br/media/contentmanager/content/banner-hospital.png"
+                    style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img
+                    src="https://www.printset.com.br/media/contentmanager/content/banner-site-printset-5x-sem-juros.png"
+                    style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="https://www.printset.com.br/media/contentmanager/content/banner1%20desktop_1.jpg"
+                    style="width:100%;">
+                </div>
+
+                <div class="item">
+                  <img src="https://www.printset.com.br/media/contentmanager/content/banner%202%20desktop_2.jpg"
+                    style="width:100%;">
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <!--Apelos Comerciais (logo abaixo do carousel-->
+          <div class="widget block block-static-block">
+            <p></p>
+            <div class="apelos-comerciais">
+              <div class="content">
+                <div class="apelos">
+                  <div class="each">
+                    <div class="tooltip-content">
+                      <p>Total segurança para o seu evento em todos os momentos, da entrada a consumação.</p>
+                      <div class="arrow-down"></div>
+                    </div>
+                    <div class="icon">
+                      <img class="apelo1"
+                        src="https://www.printset.com.br/static/frontend/Hibrido/default/pt_BR/images/svg/apelo01.svg"
+                        alt="tradição e confiança">
+                    </div>
+                    <div class="text">
+                      <p>Mais de 22 anos de <br>tradição e confiança</p>
+                    </div>
+                  </div>
+                  <div class="each">
+                    <div class="tooltip-content">
+                      <p>Total segurança para o seu evento em todos os momentos, da entrada a consumação.</p>
+                      <div class="arrow-down"></div>
+                    </div>
+                    <div class="icon">
+                      <img class="apelo2"
+                        src="https://www.printset.com.br/static/frontend/Hibrido/default/pt_BR/images/svg/apelo02.svg"
+                        alt="Qualidade máxima">
+                    </div>
+                    <div class="text">
+                      <p>Qualidade máxima<br>Tyvek®</p>
+                    </div>
+                  </div>
+                  <div class="each">
+                    <div class="tooltip-content">
+                      <p>Total segurança para o seu evento em todos os momentos, da entrada a consumação.</p>
+                      <div class="arrow-down"></div>
+                    </div>
+                    <div class="icon">
+                      <img class="apelo3"
+                        src="https://www.printset.com.br/static/frontend/Hibrido/default/pt_BR/images/svg/apelo03.svg"
+                        alt="anti-falsificação">
+                    </div>
+                    <div class="text">
+                      <p>Produto com tecnologia<br>anti-falsificação</p>
+                    </div>
+                  </div>
+                  <div class="each">
+                    <div class="tooltip-content">
+                      <p>Total segurança para o seu evento em todos os momentos, da entrada a consumação.</p>
+                      <div class="arrow-down"></div>
+                    </div>
+                    <div class="icon">
+                      <img class="apelo4"
+                        src="https://www.printset.com.br/static/frontend/Hibrido/default/pt_BR/images/svg/apelo04.svg"
+                        alt="Pagamento após a arte aprovada">
+                    </div>
+                    <div class="text">
+                      <p>Pagamento após a <br>arte aprovada</p>
+                    </div>
+                  </div>
+                  <div class="each">
+                    <div class="tooltip-content">
+                      <p>Total segurança para o seu evento em todos os momentos, da entrada a consumação.</p>
+                      <div class="arrow-down"></div>
+                    </div>
+                    <div class="icon">
+                      <img class="apelo5"
+                        src="https://www.printset.com.br/static/frontend/Hibrido/default/pt_BR/images/svg/apelo05.svg"
+                        alt="Agilidade na produção e entrega">
+                    </div>
+                    <div class="text">
+                      <p>Agilidade na <br>produção e entrega</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <p></p>
+          </div>
+
+          <!--Onde fica o ver mais com os fundos estilizados-->
+          <div class="widget block block-static-block">
+            <div class="category-grid">
+              <div class="content">
+                <ul class="grid">
+                  <li class="categorys-grid">
+
+                    <div class="categorys-content">
+                      <a href="">
+                        <h3>Pulseiras</h3>
+                        <div class="img-general">
+                          <img src="https://www.printset.com.br/media/contentmanager/content/pulseira.png"
+                            alt="Pulseiras">
+                        </div>
+                        <p>Para melhor organizar seu evento e o controle de pessoas.</p>
+                      </a>
+                      <a href="" class="color1 category-button">
+                        <span>Ver mais</span>
+                      </a>
+                    </div>
+                    <div class="background color-1">
+                    </div>
+
+                  </li>
+                  <li class="categorys-grid">
+                    <a href="">
+                    </a>
+                    <div class="categorys-content">
+                      <a href="">
+                        <h3>Ingressos</h3>
+                        <div class="img-general">
+                          <img src="https://www.printset.com.br/media/contentmanager/content/ingresso.png"
+                            alt="Pulseiras">
+                        </div>
+                        <p>Tenha controle total do número de ingressos vendidos.</p>
+                      </a>
+                      <a href="" class="color2 category-button">
+                        <span>Ver mais</span>
+                      </a>
+                    </div>
+                    <div class="background color-2">
+                    </div>
+
+                  </li>
+                  <li class="categorys-grid">
+                    <a href="">
+                    </a>
+                    <div class="categorys-content">
+                      <a href="">
+                        <h3>Ticket</h3>
+                        <div class="img-general">
+                          <img src="https://www.printset.com.br/media/contentmanager/content/ticket.png" alt="Ticket">
+                        </div>
+                        <p>Para um controle maior da contabilidade utilize as moedas.</p>
+                      </a>
+                      <a href="" class="color3 category-button">
+                        <span>Ver mais</span>
+                      </a>
+                    </div>
+                    <div class="background color-3">
+                    </div>
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!--Processo de informação-->
+          <div class="widget block block-static-block">
+            <p></p>
+            <div class="veja-como">
+              <div class="content">
+                <div class="veja-como-general">
+                  <div class="titulo">
+                    <div class="click">
+                      <img src="https://www.printset.com.br/static/frontend/Hibrido/default/pt_BR/images/click.png"
+                        alt="Click Home">
+                    </div>
+                    <h3>Veja como é fácil</h3>
+                    <p>Crie o material que seu evento precisa com<br>apenas alguns toques e aproveite a festa.</p>
+                  </div>
+                  <div class="passos mod1 passo-1">
+                    <div class="passo-img">
+                      <img
+                        src="https://www.printset.com.br/static/frontend/Hibrido/default/pt_BR/images/svg/passo-1.svg"
+                        alt="Passo 1">
+                    </div>
+                    <div class="passo-text">
+                      <h4>01.</h4>
+                      <h3>Personalize</h3>
+                      <p>Contamos com materiais de apoio para você se preocupar apenas em aproveitar a festa, escolha o
+                        produto que deseja nessa etapa.</p>
+                    </div>
+                  </div>
+                  <div class="passos mod2 passo-2">
+                    <div class="passo-text">
+                      <h4>02.</h4>
+                      <h3>Aprove</h3>
+                      <p>Nessa etapa do processo você pode escolher o produto, as cores e como ele vai ser personalizado
+                        para atender todas as necessidades que seu evento precisa.</p>
+                    </div>
+                    <div class="passo-img">
+                      <img
+                        src="https://www.printset.com.br/static/frontend/Hibrido/default/pt_BR/images/svg/passo-2.svg"
+                        alt="Passo 2">
+                    </div>
+                  </div>
+                  <div class="passos mod1 passo-3">
+                    <div class="passo-img">
+                      <img
+                        src="https://www.printset.com.br/static/frontend/Hibrido/default/pt_BR/images/svg/passo-3.svg"
+                        alt="Passo 3">
+                    </div>
+                    <div class="passo-text">
+                      <h4>03.</h4>
+                      <h3>Pague</h3>
+                      <p>O pagamento somente é realizado depois que você aprovar a arte, assim dando mais segurança e
+                        tranquilidade</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <p></p>
+          </div>
+
+          <div class="widget block block-static-block">
+            <p></p>
+          </div>
+
+          <!--ultimo carousel-->
+          <div class="widget block block-static-block">
+            <div class="marcas-general">
+              <div class="content">
+                <div class="titulo">
+                  <h3>Veja quem confia e usa Printset</h3>
+                </div>
+                <div class="container">
+                  <div class="logo-slider">
+                    <div class="item">
+                      <a href="#">
+                        <img src="https://www.printset.com.br/media/contentmanager/content/cache/160x160//Unimed.png">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="#">
+                        <img
+                          src="https://www.printset.com.br/media/contentmanager/content/cache/160x160//Rede%20Slaviero%20Hoteis.png">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="#">
+                        <img
+                          src="https://www.printset.com.br/media/contentmanager/content/cache/160x160//Cost%C3%A3o%20do%20Santinho.png">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="#">
+                        <img
+                          src="https://www.printset.com.br/media/contentmanager/content/cache/160x160//gua%20Show%20Park.png">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="#">
+                        <img
+                          src="https://www.printset.com.br/media/contentmanager/content/cache/160x160//American%20Park.png">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="#">
+                        <img
+                          src="https://www.printset.com.br/media/contentmanager/content/cache/160x160//TOP%20LINE%20Formaturas.png">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="#">
+                        <img
+                          src="https://www.printset.com.br/media/contentmanager/content/cache/160x160//Pirizal%20Thermas%20Club.png">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="#">
+                        <img src="https://www.printset.com.br/media/contentmanager/content/cache/160x160//CBM.png">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="#">
+                        <img src="https://www.printset.com.br/media/contentmanager/content/cache/160x160//MEVAM.png">
+                      </a>
+                    </div>
+                    <div class="item">
+                      <a href="#">
+                        <img src="https://www.printset.com.br/media/contentmanager/content/cache/160x160//Lagoinha.png">
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <sript src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></sript>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+                <script>
+                  $('.logo-slider').slick({
+                    slidesToShow: 5,
+                    slidesToScroll: 1,
+                    dots: true,
+                    arrows: true,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    infinite: true,
+
+                  });
+
+                </script>
+              </div>
+            </div>
+          </div>
+
+          <div class="widget block block-static-block">
+            <p></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--footer da página-->
+    <footer class="page-footer">
+
+      <!--Receber novidades-->
+      <div class="block newsletter">
+        <div class="content">
+          <form class="form subscribe">
+            <label class="label">
+              <span>Cadastre-se e receba nossas novidades</span>
+            </label>
+            <div class="newsletter-footer">
+              <div class="field newsletter">
+                <div class="control">
+                  <input type="text" name="nome" placeholder="Seu Nome">
+                  <input name="email" type="email" placeholder="Seu e-mail">
+                </div>
+              </div>
+              <div class="actions">
+                <button class="action subscribe primary" title="Assinar">
+                  <span>Receber novidades</span>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <!--Sobre-->
+      <div class="footer content">
+        <div class="widget block block-static-block">
+          <div class="footer-container">
+            <div class="footer-left">
+              <ul>
+                <li>
+                  <h3>Sobre nós</h3>
+                  <ol>
+                    <li><a href=""> A Printset </a></li>
+                    <li><a href=""> Trabalhe com a gente </a></li>
+                    <li><a href=""> Fale conosco </a></li>
+                  </ol>
+                </li>
+                <li>
+                  <h3>Compre com segurança</h3>
+                  <ol>
+                    <li><a href=""> Política de Privacidade </a></li>
+                    <li><a href=""> Trocas e Devoluções </a></li>
+                    <li><a href=""> Política de Entrega </a></li>
+                    <li><a href=""> Como Comprar? </a></li>
+                  </ol>
+                </li>
+                <li class="atendimento-footer">
+                  <h3>Televendas</h3>
+                  <ol>
+                    <li><a class="telefone-footer" href=""> 47 3340 5949 </a></li>
+                    <li><span>De segunda sexta-feira</span></li>
+                    <li><span>das 8h às 12h e 13h às 18h.</span></li>
+                    <li><a class="email-footer" href=""> contato@printset.com.br </a></li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-right">
+              <ul>
+                <li class="social-footer">
+                  <ol>
+                    <li>
+                      <a href="#" class="fa fa-facebook"></a>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="fa fa-twitter"></a>
+                    </li>
+                    <li>
+                      <a href="#" class="fa fa-instagram"></a>
+                    </li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--formas de pagamento-->
+      <div class="widget block block-static-block">
+        <div class="formas-selo">
+          <div class="content">
+            <div class="formas-selo-container">
+              <div class="seguranca-footer">
+                <h2>Segurança</h2>
+                <div class="selos"><img src="https://www.printset.com.br/media/wysiwyg/seguranca.png"
+                    alt="Selos de segurança"></div>
+              </div>
+              <div class="pagamento-footer">
+                <h2>Pagamento</h2>
+                <div class="formas"><img src="https://www.printset.com.br/media/wysiwyg/pagamento.png"
+                    alt="Formas de pagamento"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+    <small class="copyright">
+      <span><span>Printset Pulseiras e Ingressos Eireli - Epp CNPJ: 01.362.467/0001-44<br>Rua Alfredo Kaestner, 551 -
+          Bairro Vorstadt - Blumenau - Santa Catarina - CEP 89015-540</span>
+        <div class="hibrido"><a href="">Desenvolvido
+            por Híbrido</a></div>
+      </span>
+    </small>
+  </div>
+</body>
+
+</html>

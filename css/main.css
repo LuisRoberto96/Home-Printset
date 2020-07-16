@@ -1,0 +1,345 @@
+/*Contem todas as classes de div's da main*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,500&display=swap');
+
+/*columns*/
+.columns {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  box-sizing: border-box
+}
+.columns:after {
+  clear: both;
+  content: ' ';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden
+}
+.columns .column.main {
+  padding-bottom: 40px;
+  -webkit-flex-basis: 100%;
+  flex-basis: 100%;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+  -ms-flex-order: 1;
+  -webkit-order: 1;
+  order: 1;
+  width: 100%
+}
+
+
+/*apelos comerciais*/
+.apelos-comerciais {
+  max-width: 1400px;
+  margin: 0 auto
+}
+.apelos-comerciais .content {
+  max-width: 1250px
+}
+.apelos-comerciais .content .apelos {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap
+}
+.apelos-comerciais .content .apelos .each {
+  display: flex !important;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  position: relative
+}
+.apelos-comerciais .content .apelos .each .icon {
+  margin-bottom: 15px
+}
+.apelos-comerciais .content .apelos .each .apelo1 {
+  height: 38px
+}
+.apelos-comerciais .content .apelos .each .apelo2 {
+  height: 40px
+}
+.apelos-comerciais .content .apelos .each .apelo3 {
+  height: 38px
+}
+.apelos-comerciais .content .apelos .each .apelo4 {
+  height: 27px
+}
+.apelos-comerciais .content .apelos .each .apelo5 {
+  height: 28px
+}
+.apelos-comerciais .content .apelos .each .text {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #303030;
+  font-size: 15px
+}
+.apelos-comerciais .content .apelos .each .tooltip-content {
+  background-color: rgba(255, 220, 221, 0.9);
+  position: absolute;
+  transition: visibility .5s linear, opacity .5s linear;
+  opacity: 0;
+  top: -115%;
+  border-radius: 5px;
+  width: 180px;
+  visibility: hidden
+}
+.apelos-comerciais .content .apelos .each .tooltip-content p {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #c63131;
+  font-size: 12px;
+  padding: 13px 15px;
+  margin-bottom: 0px
+}
+.apelos-comerciais .content .apelos .each:hover .tooltip-content {
+  visibility: visible !important;
+  opacity: 1
+}
+
+
+/*category-grid*/
+.cms-index-index .category-grid .content .grid {
+  display: flex;
+  flex-flow: row;
+  justify-content: center
+}
+.cms-index-index .category-grid .content .grid .categorys-grid {
+  max-width: 330px;
+  position: relative;
+  margin: 10px 40px;
+  list-style-type: none
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  position: relative;
+  z-index: 5;
+  border: 4px solid #54596e;
+  border-radius: 5px;
+  height: 430px
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content h3 {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 26px;
+  font-weight: 900;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  text-align: center
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content p {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  padding: 15px;
+  font-size: 15px;
+  letter-spacing: 1px
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .category-button {
+  background-color: white;
+  padding: 8px 45px;
+  border-radius: 5px;
+  border: 3px solid #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: 0.3s
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .category-button span {
+  font-family: 'montserrat';
+  font-weight: 300
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .color1 span {
+  color: #48e4c2
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .color1:hover {
+  background-color: #48e4c2 !important
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .color1:hover span {
+  color: white
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .color2 span {
+  color: #ffa024
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .color2:hover {
+  background-color: #ffa024 !important
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .color2:hover span {
+  color: white
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .color3 span {
+  color: #ff7c7f
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .color3:hover {
+  background-color: #ff7c7f !important
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .color3:hover span {
+  color: white
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .img-general {
+  height: 193px;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .categorys-content .img-general img {
+  width: auto;
+  max-height: 193px
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .background {
+  position: absolute;
+  z-index: 1;
+  height: 440px;
+  width: 100%;
+  top: 7px;
+  left: 9px;
+  border-radius: 5px;
+  transition: 0.5s
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .color-1 {
+  background-color: #48e4c2
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .color-2 {
+  background-color: #ffa024
+}
+.cms-index-index .category-grid .content .grid .categorys-grid .color-3 {
+  background-color: #ff7c7f
+}
+.cms-index-index .category-grid .content .grid .categorys-grid:hover .background {
+  height: 435px;
+  top: 0px;
+  left: 0px
+}
+
+/*veja-como*/
+.veja-como {
+  background-color: #fafaf9;
+  padding: 130px 0px 20px 0px;
+  margin-top: -115px
+}
+.veja-como .content {
+  margin-top: 50px
+}
+.veja-como .content .veja-como-general {
+  background-color: white;
+  border-radius: 50%;
+  max-width: 1240px;
+  margin: 0 auto;
+  height: 1240px
+}
+.veja-como .content .veja-como-general .titulo {
+  display: flex;
+  flex-flow: column;
+  align-items: center
+}
+.veja-como .content .veja-como-general .titulo .click {
+  margin-top: -3%
+}
+.veja-como .content .veja-como-general .titulo .click img {
+  width: 70px
+}
+.veja-como .content .veja-como-general .titulo h3 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 45px;
+  margin-top: 0px;
+  font-weight: 600
+}
+.veja-como .content .veja-como-general .titulo p {
+  font-size: 15px;
+  text-align: center;
+  color: #c63131
+}
+.veja-como .content .veja-como-general .passos {
+  max-width: 850px;
+  margin: 10px auto;
+  display: flex;
+  flex-flow: row wrap
+}
+.veja-como .content .veja-como-general .passos .passo-img {
+  flex-basis: 50%
+}
+.veja-como .content .veja-como-general .passos .passo-img img {
+  max-height: 310px;
+  width: 100%
+}
+.veja-como .content .veja-como-general .passos .passo-text {
+  flex-basis: 30%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center
+}
+.veja-como .content .veja-como-general .passos .passo-text h4 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #c63131;
+  font-size: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px
+}
+.veja-como .content .veja-como-general .passos .passo-text h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  color: #c63131;
+  font-size: 27px;
+  margin-top: 0px
+}
+.veja-como .content .veja-como-general .passos .passo-text p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #c63131;
+  font-size: 14px;
+  margin-top: 0px
+}
+.veja-como .content .veja-como-general .passo-1 {
+  margin-top: 3%
+}
+.veja-como .content .veja-como-general .mod2 {
+  justify-content: flex-end
+}
+.veja-como .content .veja-como-general .mod2 .passo-text {
+  text-align: right
+}
+.veja-como .content .veja-como-general .mod2 .passo-img img {
+  margin-left: 20px
+}
+.veja-como .content .veja-como-general .mod1 .passo-img img {
+  margin-left: -20px
+}
+
+/*mmarcas-general*/
+.marcas-general .titulo h3 {
+  max-width: 403px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #c63131;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: .9px
+}
+
+/*Carousel*/
+.widget.block .marcas-general .content .container {
+  width:auto;
+  margin: 20px auto;
+}
+
+.widget.block .marcas-general .content .container .logo-slider .item a img {
+  border-radius: 50%;
+}
+.widget.block .marcas-general .content .container .logo-slider .slick-slide{
+  margin:15px;
+}
+.widget.block .marcas-general .content .container .logo-slider .slick-next::before,
+.widget.block .marcas-general .content .container .logo-slider .slick-prev::before{
+  color: #c63131;
+  font-size: 30px;
+  margin-left: -15px;
+}
+
